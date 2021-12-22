@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="des">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+
+        <h1>Portfolio</h1>
+
+    </header>
+
+    <main>  
+        
+        <div class="grid-container">
+
+            <div class="container">
+            
+             
+                <h2>Cross-course Project</h2>
+            
+                <a href="https://ecstatic-keller-bc6a41.netlify.app/">Link to old site</a>
+                <a href="https://jovial-aryabhata-01e1dd.netlify.app/">Link to updated site</a>
+                <a href="https://github.com/Moa2405/GameHub/tree/Portfolio">Link to GitHub updated site</a>
+
+                <div class="explanation">
+
+
+                    <h3>What Was Changed</h3>
+    
+                    <p><strong>Index page</strong></p>
+    
+                    <p>Reconstructed the index page and added a carousel</p>
+    
+                    <p><strong>Detail page</strong></p>
+    
+                    <p>Redesigned detail page and added a carousel with suggestions for games in the same category</p>
+    
+                    <p><strong>Checkout page</strong></p>
+    
+                    <p>The checkout page now shows the games that are placed in the cart</p>
+
+                </div>
+
+                <div class="explanation">
+
+                    <h3>How I Changed It</h3>
+    
+                    <p>
+                        <strong>Index page</strong>
+                    </p>
+                    
+                    <p>
+                        The reconstruction of the layout was done
+                        with HTML and CSS.<br>
+                        The carousel on the index page is the same I 
+                        made in the project exam, the logic is the same 
+                        but with slightly different colors, max-width 
+                        and data displayd.
+                    </p>
+                       
+                    <p><strong>Detail page</strong></p>
+                        
+                    <p>
+                        The reconstruction of the layout was done
+                        with HTML and CSS.<br>
+                        The carousel on the detail page is the same I 
+                        made in the project exam 1, the logic is the same 
+                        but with slightly different colors, max-width 
+                        and data displayd. 
+                    </p>
+    
+                    <p><strong>Checkout page</strong></p>
+    
+                    <p>
+                        I had to rethink the whole logic behind storing items in the shopping cart.
+    
+                        I start by creating a local-storage with the name "games", if one does not already exist. 
+    
+                        The value is stord as an array, and is parsed to a array named gamesInCart.
+    
+                        When a user clicks "add to cart" button, it checks if the game.id alredy exist in the gamesInCart array, if it dose not it gets added to the array, it then takes the array and replace it with the old array stored in local storage.
+    
+                        To get the amout of items stored in local storage with the key of games i JSON.parse the value to a variable and do a 
+                        variable.lenght to get the amout of values in the array, then display the amount to the cart icon.
+    
+                        By having each games.id stored in the gamesInCart array, i can loope throu the array in the checkout page, for each id in the array i do a fetch for the game with the spesific id.
+                    </p>
+                    
+
+                </div>
+
+                <div class="explanation">
+
+                    <h3>Why I Did It That Way</h3>
+    
+                    <p><strong>index page</strong></p>
+    
+                    <p>
+                        I I felt that there was too much text on images, and that it can be difficult to read.
+    
+                        I think the new index page looks more neat, without huge images that take a lot of attention.
+    
+                        By bringing in a carousel and a featured games section, users have instant access to the latest and greatest. 
+                    </p>
+    
+                    <p><strong>Detail page</strong></p>
+    
+                    <p>
+                        The previous detail page did not look like a typical detail page. I try to create a detail page that is somewhat more 
+                        recognizable, so that users see what they expect to see. 
+                    </p>
+                    <p><strong>Checkout page</strong></p>
+    
+                    <p>
+                        User can go back and forth to pages and add games to the shopping cart, then find all games added to the shopping cart in the checkout page.
+                        This is important since it gives a sense of flow. 
+                        Of course, the check out page is not quite finished it should be possible to select the number of each game and update the total price and be able to delete games from the shopping cart.
+                    </p>
+                
+                </div>
+
+            </div>     
+            <div>
+            <div class="container">
+
+                <h2>Semester Project 1</h2>
+
+                <a href="https://heuristic-tesla-5fa10c.netlify.app/">Link to old site</a>
+                <a href="https://objective-sinoussi-cae172.netlify.app/">Link to updated site</a>
+                <a href="https://github.com/Moa2405/Community-Science-Museum/tree/Portfolio">Link to GitHub Updated site</a>
+
+                <div class="explanation">
+
+                    <h3>What Was Changed</h3>
+    
+                    <p><strong>Index page</strong></p>
+    
+                    <p>
+                        I reconstructed the entire index page,
+                    </p>
+    
+                    <p><strong>Spesific pages</strong></p>
+    
+                    <p>
+                        Removed text from images
+                    </p>
+                
+
+                </div>
+
+                <div class="explanation">
+
+                    <h3>How I Changed It</h3>
+
+                    <p>
+                        This project does not contain any js, so everything was done with HTML and CSS
+                    </p>
+
+                    <h3>Why I Did It That Way</h3>
+
+                    <p>
+                        The index page was just too messy and way too much going on, too much color and images. It looked like the sections were competing to get as much attention as possible
+                        The new index page is much calmer, with a clear call to action
+                    </p>
+
+                    <p><strong>Spesific pages</strong></p>
+
+                    <p>
+                        All specific pages have a grid section, on small screen sizes text appears on the image with little contrast, so by removing all text from the images I have made it more readable.
+                    </p>
+                
+                </div>
+
+            </div>
+
+            </div>
+
+            <div>
+
+            <div class="container">
+
+                <h2>Project Exam 1</h2>
+               
+                <a href="https://vigorous-kilby-ec6b07.netlify.app/">Link to old site</a>
+                <a href="https://hungry-lalande-cec51f.netlify.app/">Link to updated site</a>
+                <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Moa2405/tree/Portfolio">Link to GitHub updated site</a>
+                
+                <div class="explanation">
+
+                    <h3>What Was Changed</h3>
+    
+                    <p><strong>Search field</strong></p>
+    
+                    <p><strong>Subscribe section</strong></p>
+
+                </div>
+
+                <div class="explanation">
+
+                    <h3>How I Changed It</h3>
+    
+                    <p><strong>Search field</strong></p>
+    
+                    <p>
+                        By removing 100% height I fixed the problem where the search field bugd on iphones.
+                    </p>
+    
+                    <p><strong>Subscribe section</strong></p>
+    
+                    <p>
+                        HTML and CSS
+                    </p>
+                    
+                </div>    
+
+                <div class="explanation">
+
+                    <h3>Why I Did It That Way</h3>
+    
+                    <p><strong>Search field</strong></p>
+    
+                    <p>
+                        The search field failed on my iphone, I do not know if the error also applies to android phones, but on desktops it behaves completely normally, but on my iphone the search field stretched throughout the page. It had something to do with height: 100%, the 100% height was to fill the container it already was inside. 
+                    </p>
+    
+                    <p><strong>Subscribe section</strong></p>
+    
+                    <p>
+                        Got a feeling that the page looked a bit flat, so I wanted to piff it up a bit with a section with a different background color
+                    </p>
+
+                </div>
+
+            </div>
+
+            </div>
+            
+        </div>
+
+    </main>
+</body>
+</html>
