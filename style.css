@@ -7,6 +7,7 @@
 }
 
 body {
+  background: rgb(230, 230, 230);
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
   width: 100%;
@@ -32,7 +33,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
   display: grid;
   gap: 1em;
   padding: 0.5em;
@@ -40,6 +41,7 @@ main {
 }
 
 .explanation {
+  line-height: 1.4;
   width: 100%;
   display: grid;
   gap: 0.5em;
@@ -51,5 +53,16 @@ main {
   .grid-container {
     flex-direction: row;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 400px;
   }
 }
