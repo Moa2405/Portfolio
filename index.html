@@ -80,14 +80,7 @@
                     <p>
                         I had to rethink the whole logic behind storing items in the shopping cart.
     
-                        I start by creating a local-storage with the name "games", if one does not already exist. 
-    
-                        The value is stord as an array, and is parsed to a array named gamesInCart.
-    
-                        When a user clicks "add to cart" button, it checks if the game.id alredy exist in the gamesInCart array, if it dose not it gets added to the array, it then takes the array and replace it with the old array stored in local storage.
-    
-                        To get the amout of items stored in local storage with the key of games i JSON.parse the value to a variable and do a 
-                        variable.lenght to get the amout of values in the array, then display the amount to the cart icon.
+                        I now have a top level js file that all html pages load first, the js file takes care of the functionality by keeping track of what comes in from games and which games are already in the shopping cart. When the page loads, a variable is created that retrieves stored games in local storage as an array, I can then push new games to the variable and update local storage with the new array. From here it is now easier to keep track of how many games are in the shopping cart to display it by the cart icon
     
                         By having each games.id stored in the gamesInCart array, i can loope throu the array in the checkout page, for each id in the array i do a fetch for the game with the spesific id.
                     </p>
@@ -102,7 +95,7 @@
                     <p><strong>index page</strong></p>
     
                     <p>
-                        I I felt that there was too much text on images, and that it can be difficult to read.
+                        I felt that there was too much text on images, and that it can be difficult to read.
     
                         I think the new index page looks more neat, without huge images that take a lot of attention.
     
@@ -172,7 +165,7 @@
                     <p><strong>Spesific pages</strong></p>
 
                     <p>
-                        All specific pages have a grid section, on small screen sizes text appears on the image with little contrast, so by removing all text from the images I have made it more readable.
+                        Poor contrast on text placed on images.                   
                     </p>
                 
                 </div>
